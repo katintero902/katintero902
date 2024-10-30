@@ -2,29 +2,29 @@
 import math
 
 
-def linoleja_izmaksas(cena, l_platums, i_garums, i_platums):
+def laminata_izmaksas(cena, laminata_platums, istabas_garums, laminata_platums):
     
-    r_platums = math.ceil(i_platums)
-    r_garums = math.ceil(i_garums)
+    round_platums = math.ceil(istabas_platums)
+    round_garums = math.ceil(istabas_garums)
 
-    i_laukums = r_platums * r_garums
+    istabas_laukums = r_platums * r_garums
     
-    linolejs = i_laukums / l_platums
+    linolejs = istabas_laukums / l_platums
 
-    result = linolejs * cena
+    result = laminata * cena
 
     return round(result, 2)
 
 
 
-cena = float(input("Ievadiet linoleja cenu EUR/m²: "))
+cena = float(input("Ievadiet laminata cenu EUR/m²: "))
 
-l_platums = float(input("Ievadiet linoleja platumu m: "))
+laminata_platums = float(input("Ievadiet laminata platumu m: "))
 
-i_garums = float(input("Ievadiet istabas garumu m: "))
-i_platums = float(input("Ievadiet istabas platumu m: "))
+istabas_garums = float(input("Ievadiet istabas garumu m: "))
+istabas_platums = float(input("Ievadiet istabas platumu m: "))
 
-summa = linoleja_izmaksas(cena, l_platums, i_garums, i_platums)
+summa = laminata_izmaksas(cena, laminata_platums, istabas_garums, istabas_platums)
 
 
-print(f"Linoleja ieklāšanas izmaksas: {summa: .2f} EUR")
+print(f"laminata ieklāšanas izmaksas: {summa: .2f} EUR")
