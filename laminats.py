@@ -7,9 +7,9 @@ def laminata_izmaksas(cena, laminata_platums, istabas_garums, laminata_platums):
     round_platums = math.ceil(istabas_platums)
     round_garums = math.ceil(istabas_garums)
 
-    istabas_laukums = r_platums * r_garums
+    istabas_laukums = round_platums *  round_garums
     
-    linolejs = istabas_laukums / l_platums
+    laminats = istabas_laukums / laminata_platums
 
     result = laminata * cena
 
