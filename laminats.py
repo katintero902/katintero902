@@ -2,7 +2,7 @@
 import math
 
 
-def laminata_izmaksas(cena, laminata_platums, istabas_garums, laminata_platums):
+def laminata_izmaksas(cena, laminata_platums, istabas_garums):
     
     round_platums = math.ceil(istabas_platums)
     round_garums = math.ceil(istabas_garums)
