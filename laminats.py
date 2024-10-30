@@ -2,16 +2,16 @@
 import math
 
 
-def laminata_izmaksas(cena, laminata_platums, istabas_garums):
+def laminata_izmaksas(cena, laminata_platums, istabas_garums, istabas_platums):
     
     round_platums = math.ceil(istabas_platums)
     round_garums = math.ceil(istabas_garums)
 
-    istabas_laukums = round_platums *  round_garums
+    istabas_laukums = round_platums * round_garums
     
     laminats = istabas_laukums / laminata_platums
 
-    result = laminata * cena
+    result = laminats * cena
 
     return round(result, 2)
 
